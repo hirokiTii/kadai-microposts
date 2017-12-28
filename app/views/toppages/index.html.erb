@@ -11,6 +11,9 @@
     <div class="col-xs-8">
       <%= render 'microposts/microposts', microposts: @microposts %>
     </div>
+    <div>
+       <%= link_to favorite_path(current_user) do %> <span class = "glyphicon glyphicon-chevron-right"></span>My favorite<% end %>
+    </div>
   </div>
 <% else %>
   <div class="center jumbotron">
